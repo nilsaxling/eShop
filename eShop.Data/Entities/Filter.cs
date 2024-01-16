@@ -5,5 +5,5 @@ public class Filter : IEntity
     public string Name { get; set; }
     public string TypeName { get; set; }
     public OptionType OptionType { get; set; }
-    public List<Category> Cat { get; set; }
+    public List<Category>? Categories { get; set; }
 }
