@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace eShop.Data.Contexts;
-public class EShopContext(DbContextOptions<EShopContext> Builder) : DbContext(Builder)
+public class EShopContext(DbContextOptions<EShopContext> builder) : DbContext(builder)
 {
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Size> Sizes => Set<Size>();

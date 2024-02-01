@@ -1,8 +1,4 @@
-﻿
-
-global using Microsoft.AspNetCore.Builder;
-
-namespace eShop.API.Extensions.Extensions;
+﻿namespace eShop.API.Extensions.Extensions;
 
 public static class HttpExtensions
 {
@@ -17,8 +13,8 @@ public static class HttpExtensions
         //app.MapDelete($"/api/{node}s/" + "{id}", HttpDeleteAsync<TEntity>);
     }
 
-    public static async Task<IResult> HttpGetAsync<TEntity, TDto>()
+    public static async Task<IResult> HttpGetAsync<TEntity, TDto>(this IDbService db)
     where TEntity : class where TDto : class =>
-        Results.Ok();
+        Results.Ok(await db.GetAsync<TEntity, TDto());
 }
 
