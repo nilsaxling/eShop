@@ -57,7 +57,6 @@ void RegisterEndpoints()
 void RegisterServices()
 {
     ConfigureAutoMapper();
-    //ConfigureAutoMapper(builder.Services);
     builder.Services.AddScoped<IDbService, CategoryDbService>();
 }
 void ConfigureAutoMapper()
