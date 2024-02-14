@@ -5,7 +5,7 @@ public class CategoryDbService(EShopContext db, IMapper mapper) : DbService(db, 
     public override async Task<List<TDto>> GetAsync<TEntity, TDto>()
     {
         //IncludeNavigationsFor<Filter>();
-        //IncludeNavigationFor<Vehicle>();
+        //IncludeNavigationsFor<Product>();
         return await base.GetAsync<TEntity, TDto>();
     }
 
