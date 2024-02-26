@@ -46,17 +46,18 @@ h1:focus {
      font-size: 8.5rem !important;       
 }*/
 
-header div img, .dropdown .btn, header button  {
-    height: 69px;
+nav a img{
+    height: 70px;
 }
 
 .search-width{
     width:25%;
 }
 
-#cart-button {
+/*#cart-button {
     width: 69px;
-}
+    height:60px;
+}*/
 
 .cart-count {
     top: 0;
@@ -70,3 +71,124 @@ header div img, .dropdown .btn, header button  {
 /*.dropdown .btn{
     height:49px;
 }*/
+
+.carousel.slide{
+    width:50%;
+}
+
+#carouselExampleCaptions {
+    width: 75%; /* Öka bredden enligt dina önskemål */
+    margin: 0 auto; /* Centrera karusellen horisontellt */
+}
+
+.carousel-item img {
+    width: 100%; /* Sätt bredden till 100% för att anpassa sig till föräldrarelementet */
+    height: 450px; /* Ange önskad höjd för bilderna */
+    object-fit: cover; /* Använd "cover" för att behålla bildförhållandet och täcka hela området */
+}
+
+
+#carouselExampleCaptions .carousel-inner .carousel-item:first-child {
+    width: 120%; /* Anpassa bredden för den första bilden*/
+}
+
+#carouselExampleCaptions .carousel-control-prev {
+    margin-left: -5%; /* Justera marginen för att undvika att knappen döljs helt */
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:first-child .carousel-caption { /*Ändra text första carouselbilden*/
+    top: 7%;
+    color: black;
+    width: 58%;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item:first-child .carousel-caption h5,
+#carouselExampleCaptions .carousel-inner .carousel-item:first-child .carousel-caption p {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 2rem;
+    /* Du kan lägga till eller ändra andra stilar efter behov */
+}
+
+/*.product-card {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+*/
+.product-card-list:first-child {
+    margin-left: 0rem! important;
+}
+
+.product-card-list:last-child {
+    margin-left: 0rem !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 5%;
+    color: black;
+    width: 50%;
+}
+
+    .carousel-caption h5, .carousel-caption p {
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5); /* Vita textskuggor för att förbättra läsbarheten på mörk bakgrund */
+        color: black; /* Vit text på svart bakgrund */
+        font-size: 2rem; /* Ändra detta värde för att justera storleken på texten */
+    }
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item:nth-child(2) .carousel-caption {
+    position: absolute;
+    top: 5%;
+    color: white;
+    width: 40%;
+    padding-top: 0rem;
+    left: 1%;
+}
+
+    .carousel-item:nth-child(2) .carousel-caption h5, .carousel-item:nth-child(2) .carousel-caption p {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Svarta textskuggor för att förbättra läsbarheten på ljus bakgrund */
+        color: black;
+    }
+
+    .carousel-item:nth-child(2) .carousel-caption p {
+        margin: 0; /* Tar bort standardmarginalen på p-taggar för att minska avståndet */
+        text-align: left; /* Vänsterjustera texten i p-taggar */
+    }
+
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) {
+    width: 100%; /* Anpassa bredden för den tredje bilden */
+    height: 450px; /* Ange önskad höjd för bilden */
+    object-fit: cover; /* Använd "cover" för att behålla bildförhållandet och täcka hela området */
+}
+
+    #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+#carouselExampleCaptions .carousel-control-prev {
+    margin-left: 0; /* Återställ marginen för att undvika problem med knappen */
+}
+
+.card.product-card {
+    width: 100%; /* Anpassa bredden på produktkortet */
+}
+
+.card.product-card img {
+    width: 100%; /* Sätt bredden på bilden inuti produktkortet till 100% */
+    height: 100%; /* Använd 100% höjd för att behålla bildförhållandet och täcka hela området */
+    object-fit: cover; /* Använd "cover" för att behålla bildförhållandet och täcka hela området */
+
+}
+
+/* Hårdkodade bredd- och höjdinställningar på vissa element, justera om det behövs */
+.carousel-caption, .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 450px;
+}
