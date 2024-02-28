@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.API.DTO", "eShop.API.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.UI", "eShop.UI\eShop.UI.csproj", "{0437575C-063C-4D92-991A-CF1E58170F15}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.UI.Models", "eShop.UI.Models\eShop.UI.Models.csproj", "{4F280DB8-7172-4A4F-9DC7-2263EB3D81D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0437575C-063C-4D92-991A-CF1E58170F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0437575C-063C-4D92-991A-CF1E58170F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0437575C-063C-4D92-991A-CF1E58170F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F280DB8-7172-4A4F-9DC7-2263EB3D81D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F280DB8-7172-4A4F-9DC7-2263EB3D81D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F280DB8-7172-4A4F-9DC7-2263EB3D81D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F280DB8-7172-4A4F-9DC7-2263EB3D81D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

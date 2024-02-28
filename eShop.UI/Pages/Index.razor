@@ -1,7 +1,19 @@
 ﻿@page "/"
 
 <NavComponent />
-<MenuComponent />
+@* <MenuComponent />
 <CarouselComponent />
-<CardListComponent />
+<CardListComponent /> *@
 
+
+<div id="viewport" class ="d-flex vh-100">
+    <AsideComponent OnChange="OnChange"/>
+    <ProductComponent />
+</div>
+
+@code{
+    void OnChange()
+    {
+    
+    }
+}
